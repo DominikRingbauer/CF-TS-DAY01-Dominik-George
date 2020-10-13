@@ -1,9 +1,13 @@
 let names = ["Alex", "Ben", "Tom", "Werner"];
 
 for (let index in names){
-	console.log(index);
+	document.getElementById("index").innerHTML += index + " ";
 };
 
 for (var value of names){
-	console.log(value);
+	document.getElementById("values").innerHTML += value + " ";
+}
+
+for ( let both in names ) {
+ 	document.getElementById("both").innerHTML += names[both] + " " + both + " ";
 }
